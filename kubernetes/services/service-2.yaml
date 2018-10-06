@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-2
+  annotations:
+    cloud.google.com/load-balancer-type: "Internal"
   labels:
     app: nginx-2
 spec:
